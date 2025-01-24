@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Webshop</title>
+</head>
+<body>
+<h1>Webshop</h1>
+<h2>Termékek</h2>
+<ul>
+    <li th:each="product : ${products}">
+        <span th:text="${product.name}"></span> -
+        <span th:text="${product.price}"></span> Ft
+    </li>
+</ul>
+</body>
+</html>
